@@ -1,0 +1,7 @@
+.green{
+    border: solid 2px #00FF00;
+}
+.selectedValue{
+    border: solid 2px rgb(15, 58, 100);
+    padding-left: 5px;
+}

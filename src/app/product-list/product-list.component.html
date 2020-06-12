@@ -1,0 +1,30 @@
+<div class="green" style="margin: 5px; padding: 5px;">
+<p>List of products</p>
+
+
+<div *ngIf="selectedValue" class="selectedValue"><h4>You have selected : {{selectedValue}}</h4></div>
+<div *ngIf="!selectedValue" style="border: solid 2px #FFFFFF"><h4>&nbsp;</h4></div>
+
+<h3>Total : {{totalValue}}</h3>
+
+<table>
+    <tr>
+        <td>
+            <app-product [myProduct]="product1" (outputElement)="updateTotal($event)" (outputSelectedProduct)="displaySelectedProduct($event)"></app-product>
+        </td>
+        <td>
+            <app-product [myProduct]="product2" (outputElement)="updateTotal($event)" (outputSelectedProduct)="displaySelectedProduct($event)"></app-product>
+        </td>
+        <td>
+            <app-product [myProduct]="product3" (outputElement)="updateTotal($event)" (outputSelectedProduct)="displaySelectedProduct($event)"></app-product>
+        </td>
+        <td>
+            <app-product [myProduct]="product4" (outputElement)="updateTotal($event)" (outputSelectedProduct)="displaySelectedProduct($event)"></app-product>
+        </td>
+        <td>
+            <app-product [myProduct]="product5" (outputElement)="updateTotal($event)" (outputSelectedProduct)="displaySelectedProduct($event)"></app-product>
+        </td>
+    </tr>
+</table>
+
+</div>

@@ -1,0 +1,13 @@
+Hello
+
+<div [class]="theColor">{{thePerson.getName()}}</div>
+
+<button (click)="changeName()">Change name</button>
+&nbsp;&nbsp;&nbsp;
+<select name="color" id="" (change)="changeColor()" [(ngModel)]="theValue">
+  <option value="blue">Blue</option>
+  <option value="red">Red</option>
+  <option value="green">Green</option>
+</select>
+
+<app-main-app></app-main-app>

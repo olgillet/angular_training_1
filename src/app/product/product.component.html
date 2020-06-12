@@ -1,0 +1,18 @@
+<div class="blue" style="margin: 5px; padding: 5px;" (click)='selectThisProduct(myProduct)'>
+    <p>Product detail</p>
+
+    {{myProduct.name}}
+    <br/><br/>
+    {{myProduct.description}}
+
+    <br/><br/>
+    
+    <div style="text-align:center">
+        <span>
+            <button (click)='clickPlus(); $event.stopPropagation();'>+</button>&nbsp;&nbsp;
+            <button (click)='resetProductNb(); $event.stopPropagation();'>{{productNb}}</button>&nbsp;&nbsp;
+            <button (click)='clickMinus(); $event.stopPropagation();'>-</button>
+        </span>
+    </div>
+
+</div>
